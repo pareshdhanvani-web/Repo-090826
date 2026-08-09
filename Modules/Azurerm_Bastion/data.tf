@@ -1,0 +1,11 @@
+data"azurerm_subnet""subnet"{
+    for_each=var.bastion
+    name=each.value.subnetname
+    resource_group_name=each.value.rgname
+    virtual_network_name=each.value.subnet_vnet_name
+}
+data"azurerm_public_ip""pip"{
+    for_each=var.bastion
+    name=each.value.public_ip_name
+    resource_group_name=each.value.rgname
+}
