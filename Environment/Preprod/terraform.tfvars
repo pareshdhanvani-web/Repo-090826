@@ -42,12 +42,12 @@ snets = {
     name      = "AzureBastionSubnet"
     vnet_name = "frontend-vnet"
     rgname    = "frontend-rg"
-    ap        = ["1.0.0.0/30"]
+    ap        = ["1.0.0.0/26"]
 
   }
   snet2 = {
     name      = "Frontend-subnet"
-    vnet_name = "Frontend-vnet"
+    vnet_name = "frontend-vnet"
     rgname    = "frontend-rg"
     ap        = ["1.0.1.0/24"]
   }
@@ -55,7 +55,7 @@ snets = {
     name      = "backent-subnet"
     vnet_name = "backend-vnet"
     rgname    = "backend-rg"
-    ap        = ["1.1.0.0/16"]
+    ap        = ["1.1.0.0/24"]
   }
 }
 pips = {
@@ -105,7 +105,7 @@ vms = {
     vmname          = "frontend-vm"
     vmsize          = "Standard_D2s_v3"
     nic_name        = "nic-frontend"
-    rgname          = "frontend_rg"
+    rgname          = "frontend-rg"
     keyvault_name   = "keyvault"
     keyvault_rgname = "frontend-rg"
     subnet_name     = "frontend-subnet"
@@ -116,7 +116,7 @@ vms = {
     vmname          = "backend-vm"
     vmsize          = "Standard_D2s_v3"
     nic_name        = "nic-backend"
-    rgname          = "backend_rg"
+    rgname          = "backend-rg"
     keyvault_name   = "keyvault"
     keyvault_rgname = "frontend-rg"
     subnet_name     = "backend-subnet"
@@ -128,7 +128,7 @@ vms = {
 kv = {
   kv1 = {
     keyvault_name = "keyvault"
-    rg_name       = "frontend_rg"
+    rg_name       = "frontend-rg"
     location      = "westindia"
   }
 }
