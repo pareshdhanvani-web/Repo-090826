@@ -10,7 +10,7 @@ resource "azurerm_key_vault" "kv" {
     tenant_id = data.azurerm_client_config.current.tenant_id
 }
 data "azurerm_client_config" "current"{}
-data "azurerm_client_config" "current" {}
+
 
 resource "azurerm_key_vault_access_policy" "github_actions" {
 
