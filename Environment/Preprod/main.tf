@@ -21,7 +21,7 @@ module "pubip" {
 }
 module "Bastion" {
 
-  depends_on = [module.resource_group, module.pubip]
+  depends_on = [module.resource_group, module.pubip , module.subnet]
   source     = "../../Modules/Azurerm_Bastion"
   bastion    = var.bastion
 
