@@ -52,7 +52,7 @@ snets = {
     ap        = ["1.0.1.0/24"]
   }
   snet3 = {
-    name      = "backent-subnet"
+    name      = "backend-subnet"
     vnet_name = "backend-vnet"
     rgname    = "backend-rg"
     ap        = ["1.1.0.0/24"]
@@ -86,7 +86,7 @@ nsg = {
   nsg1 = {
     nsg_name     = "frontend-nsg"
     rgname       = "frontend-rg"
-    loc          = "west-india"
+    loc          = "westindia"
     nsgrule_name = "frontend-vm-rule"
     subnet_name  = "frontend-subnet"
     vnet_name    = "frontend-vnet"
@@ -94,7 +94,7 @@ nsg = {
   nsg2 = {
     nsg_name     = "backend-nsg"
     rgname       = "backend-rg"
-    loc          = "west-india"
+    loc          = "westindia"
     nsgrule_name = "backend-vm-rule"
     subnet_name  = "backend-subnet"
     vnet_name    = "backend-vnet"
@@ -127,7 +127,7 @@ vms = {
 
 kv = {
   kv1 = {
-    keyvault_name = "keyvault"
+    keyvault_name = "keyvault0908"
     rg_name       = "frontend-rg"
     location      = "westindia"
   }
