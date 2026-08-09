@@ -4,7 +4,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   resource_group_name             = data.azurerm_resource_group.rg[each.key].name
   location                        = data.azurerm_resource_group.rg[each.key].location
   size                            = each.value.vmsize
-  disable_password_authentication = true
+  disable_password_authentication = false
   admin_username                  = "Azureuser"
   admin_password                  = data.azurerm_key_vault_secret.vm_password[each.key].value
 
