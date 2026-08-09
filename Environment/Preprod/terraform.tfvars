@@ -103,7 +103,7 @@ nsg = {
 vms = {
   vm1 = {
     vmname          = "frontend-vm"
-    vmsize          = "Standard_D2s_v5"
+    vmsize          = "Standard_B1ls"
     nic_name        = "nic-frontend"
     rgname          = "frontend-rg"
     keyvault_name   = "keyvault0908"
@@ -114,7 +114,7 @@ vms = {
   }
   vm2 = {
     vmname          = "backend-vm"
-    vmsize          = "Standard_D2s_v5"
+    vmsize          = "Standard_B1ls"
     nic_name        = "nic-backend"
     rgname          = "backend-rg"
     keyvault_name   = "keyvault0908"
