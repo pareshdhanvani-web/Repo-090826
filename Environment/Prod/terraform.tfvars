@@ -1,10 +1,10 @@
 rgs={
     rg1={
-        name="rg5"
+        name="rg6"
         loc="centralindia"
-        mb="terraorm"
+        mb="terraform"
         tags={
-            brand="number1"
+            brand="number2"
             education="illiterate"
             signature="thumb"
             hobby="sochnapadega"
